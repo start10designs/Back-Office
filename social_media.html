@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Back Office</title>
+	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+</head>
+<body>
+
+
+
+<!-- Sidebar Menu Starts Here -->
+
+<div class="sidebar">
+	<div class="sidebar_header">
+		<a href="#"><img src="images/logo.png"></a>
+		<a href="#" class="sidebar-toggle">
+			<span></span>
+			<span class="bg"></span>
+			<span></span>
+		</a>
+	</div>
+
+	<div class="sidebar-main-menu">
+		<ul class="list-unstyled">
+			<li>
+				<a href="#"><span style="background-image: url(images/home_icon.png)"></span>Home</a>
+			</li>
+			<li>
+				<a href="#"><span style="background-image: url(images/category_icon.png)"></span> Categories</a>
+			</li>
+			<li>
+				<a href="#" class="active"><span style="background-image: url(images/menu_icon.png)"></span> Menu Items</a>
+			</li>
+			<li>
+				<a href="#"><span style="background-image: url(images/pizza_icon.png)"></span> Pizza Builder</a>
+			</li>
+			<li>
+				<a href="#"><span style="background-image: url(images/coupons.png)"></span> Coupons</a>
+			</li>
+			<li>
+				<a href="#" class="has-dropdown"><span style="background-image: url(images/setting_icon.png)"></span> Configuration</a> 
+				<ul class="list-unstyled sub-menu-side">
+					<li>
+				<a href="#"> Branding</a>
+			</li>
+			<li>
+				<a href="#">Social Media</a>
+			</li>
+
+				<li>
+				<a href="#"> Payment Gateway</a>
+			</li>
+			<li>
+				<a href="#">Google Api</a>
+			</li>
+
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- Sidebar Menu Ends Here -->
+
+
+
+<div class="main-content-wrap">
+	
+	<header>
+		<div class="header-heading pull-left">
+			Web Support Online
+		</div>
+		<div class="pull-right user-menu">
+			<a href="#" class="has-dropdown">
+			<span class="avatar-img">
+				<img src="images/avatar.png"> </span>Welcome <b>Assal!</b> <i class="fa fa-angle-down"></i>
+			</a>
+			<div class="main-menu-user">
+				<ul class="list-unstyled">
+					<li>
+						<a href="#">Profile</a>
+					</li>
+					<li>
+						<a href="#">Settings</a>
+					</li>
+					<li>
+						<a href="#">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+
+
+
+
+	<div class="main-inner-wrapper">
+		<div class="page-heading">
+			Social Media
+		</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Social Media Config Starts Here -->
+
+<div class="main-table-wrapper without-cat-dropdown mb-20">
+	
+
+	<table class="table" id="example">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col" width="15%">Name</th>
+      <th scope="col" width="">URL</th>
+      <th scope="col" width="15%;">Image <span>(30 x 30)</span></th>
+    </tr>
+  </thead>
+  <tbody>
+  
+    <tr  class="row-uneditable">
+      <td>Facebook</td>
+      <td><a href="#">www.facebook.com</a></td>
+      <td><span class="image-box-tab blank-img-tab-ht img-30-30"> <span class="image-inner-box"> <img src="images/S1.png"> </span>  <label class="delete-img">x</label> </span></td>
+    </tr>
+
+    <tr  class="row-uneditable">
+      <td>Twitter</td>
+      <td><a href="#">www.twitter.com</a></td>
+      <td><span class="image-box-tab blank-img-tab-ht img-30-30"> <span class="image-inner-box"> <img src="images/S2.png"> </span>  <label class="delete-img">x</label> </span></td>
+    </tr>
+
+    <tr  class="row-uneditable">
+      <td>Yelp</td>
+      <td><a href="#">www.yelp.com</a></td>
+      <td><span class="image-box-tab blank-img-tab-ht img-30-30"> <span class="image-inner-box"> <img src="images/S3.png"> </span>  <label class="delete-img">x</label> </span></td>
+    </tr>
+
+    <tr  class="row-uneditable">
+      <td>Instagram</td>
+      <td><a href="#">www.instagram.com</a></td>
+      <td><span class="image-box-tab blank-img-tab-ht img-30-30"> <span class="image-inner-box"> <img src="images/S4.png"> </span>  <label class="delete-img">x</label> </span></td>
+    </tr>
+
+    <tr  class="row-uneditable">
+      <td>Other</td>
+      <td><a href="#">www.xyz.com</a></td>
+      <td><span class="image-box-tab blank-img-tab-ht img-30-30"> <span class="image-inner-box"> <img src="images/S5.png"> </span>  <label class="delete-img">x</label> </span></td>
+    </tr>
+</tbody>
+</table>
+
+
+</div>
+
+<!-- Social Media Config Starts Here -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-submit-form-btn">
+	<a href="#">
+		Save Changes
+	</a>
+</div>
+
+	</div>
+
+
+
+
+
+
+
+<footer>
+	©2010 InTouch Online - v3.6.42 - Terms of use - Privacy policy
+</footer>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>	
+<script src="js/bootstrap.js"></script>	
+<script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+<script>
+	$(document).ready(function(){
+		$(".sidebar-toggle").click(function(){
+			$(".sidebar").toggleClass('small-menu');
+			$(".main-content-wrap").toggleClass('small');
+		});
+	});
+</script>
+
+<script>
+$(document).ready(function() {
+$('#example, #example2').dataTable({
+    "bPaginate": false,
+    "bLengthChange": false,
+    "bFilter": false,
+    "bInfo": false,
+    "bAutoWidth": false,
+    language: {
+        searchPlaceholder: "Search Items"
+    }
+
+     });
+});
+</script>
+
+<script>
+var text_max = 200;
+$('#count_message').html(text_max + ' /250');
+
+$('#text').keyup(function() {
+  var text_length = $('#text').val().length;
+  var text_remaining = text_max - text_length;
+  
+  $('#count_message').html(text_remaining + ' /250');
+});
+</script>
+
+
+	<script>
+		$(document).ready(function(){
+			$(".row-uneditable input.display-order-input, .row-uneditable input.display-order-input2, .row-uneditable textarea").click(function(){
+				$(this).parents(".row-uneditable").removeClass('row-uneditable');
+			});
+		});
+	</script>
+
+
+	<script>
+		$(document).ready(function(){
+
+			 var $newdiv1 = ' <label for="select-img" class="add-image-btn">+</label> <input type="file" id="select-img" class="select-img-input" name="">';
+
+			$(".delete-img").click(function(){
+				$(this).parents(".image-box-tab").children(".image-inner-box").remove();
+				$(this).parents(".image-box-tab").append($newdiv1);
+			});
+		});
+	</script>
+
+<script>
+	$(document).ready(function(){
+		$(".has-dropdown").click(function(){
+			$(this).toggleClass('active hovered');
+			$(this).next("ul").toggle();
+			$(this).next(".main-menu-user").toggle();
+		})
+	});
+</script>
+
+
+<script>
+	$(document).ready(function(){
+		
+    if ($(window).width() < 768) {
+           $(".sidebar").addClass('small-menu');
+			$(".main-content-wrap").addClass('small');
+    }
+});
+    
+   
+</script>
+</body>
+</html>
